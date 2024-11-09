@@ -175,7 +175,16 @@ margin-left: -69px; /* Décale les boutons vers la gauche */
 .index-btn-small img {
   max-width: 33px;
 }
+.video-container {
+  width: 100%;
+  overflow: hidden;
+}
 
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajuste la vidéo pour remplir l'espace */
+}
 .video-background {
   position: fixed;
   right: 0;
