@@ -88,7 +88,9 @@
   .minecraft-txt {
     font-family: var(--minecraft-font);
     color: #fff;
-  }
+    font-size: 5vw; 
+}
+
 
   /*==================== INDEX ====================*/
 .main-content {
@@ -335,22 +337,34 @@ video {
      0px  4px 0 #000;
 }
 }
-@media screen and (max-width: 539px) and (min-width: 370px)  {
-  .index-title h1  {
-    font-size: 25px;
-    bottom: -20px;
-    text-shadow:
-    0px 4px 4px rgba(0, 0, 0, 0.25),
-    -4px -4px 0 #000,  
-    -4px  4px 0 #000,
-     4px -4px 0 #000,
-     4px  4px 0 #000,
-    -4px  0px 0 #000,
-     4px  0px 0 #000,
-     0px -4px 0 #000,
-     0px  4px 0 #000;
+.index-title h1 {
+  font-size: 25px;
+  bottom: -20px; 
+  text-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+      -4px -4px 0 #000,  
+      -4px  4px 0 #000,
+      4px -4px 0 #000,
+      4px  4px 0 #000,
+      -4px  0px 0 #000,
+      4px  0px 0 #000,
+      0px -4px 0 #000,
+      0px  4px 0 #000;
 }
+
+@media screen and (max-width: 539px) and (min-width: 370px) {
+  .index-title h1 {
+      font-size: 25px;
+      bottom: -30px; 
+  }
 }
+
+@media screen and (max-width: 385px) and (min-width: 370px) {
+  .index-title h1 {
+      bottom: -90px; 
+  }
+}
+
 @media screen and (max-width: 369px)  {
   .index-title h1  {
     font-size: 25px;
