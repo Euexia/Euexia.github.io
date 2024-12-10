@@ -11,13 +11,48 @@
   --minecraft-font : 'Minecraft';
 
 }
+/*==================== CONTACT ====================*/
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; 
+  margin-top: 50px; 
+  margin-bottom: 30px;
+}
+
+.email-section {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.email-text {
+  margin: 0;
+}
+
+.clickable-email {
+  color: #228f30;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clickable-email:hover {
+  color: #2bb33d;
+}
+
+.copied-confirmation {
+  display: none;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
 /*==================== BASE ====================*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /*box-shadow: 0 0 0 3px  red inset;*/
     font-family: var(--minecraft-font);
   }
   
@@ -97,27 +132,27 @@
 .index-content,
 .btn-box {
   display: flex;
-  flex-direction: column; /* Alignement vertical pour les boutons principaux */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
-  gap: 43px; /* Espacement entre les sections */
+  gap: 43px; 
 }
 
 .btn-bot {
   display: flex;
-  flex-direction: row; /* Alignement horizontal par défaut */
-  gap: 15px; /* Espacement entre les boutons */
-  justify-content: center; /* Centrer les boutons */
-  width: 100%; /* Prendre toute la largeur disponible */
-  margin-top: 15px; /* Espacement supplémentaire si nécessaire */
+  flex-direction: row; 
+  gap: 15px; 
+  justify-content: center; 
+  width: 100%; 
+  margin-top: 15px; 
 }
 
 .btn-bot-box {
 display: flex;
-flex-direction: row; /* Assure que les boutons sont alignés horizontalement */
-gap: 15px; /* Espacement entre les boutons */
-justify-content: center; /* Centre les boutons horizontalement */
-margin-left: -69px; /* Décale les boutons vers la gauche */
+flex-direction: row; 
+gap: 15px; 
+justify-content: center; 
+margin-left: -69px; 
 }
 
 .index-btn,
@@ -161,8 +196,8 @@ margin-left: -69px; /* Décale les boutons vers la gauche */
 
 .index-btn-mid,
 .index-btn-small {
-  max-width: 90%; /* Largeur maximale pour les petits écrans */
-  font-size: 1rem; /* Taille de police relative */
+  max-width: 90%; 
+  font-size: 1rem; 
 }
 
 .index-btn:hover,
@@ -183,7 +218,7 @@ margin-left: -69px; /* Décale les boutons vers la gauche */
 video {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ajuste la vidéo pour remplir l'espace */
+  object-fit: cover; 
 }
 .video-background {
   position: fixed;
@@ -244,12 +279,12 @@ video {
 }
 .index-btn-small,
 .index-btn-mid {
-  width: 90%; /* Ajuste la largeur pour un meilleur affichage sur mobile */
+  width: 90%; 
   font-size: 18px;
   }
 .index-btn {
-  flex-direction: column; /* Empiler les boutons verticalement sur les petits écrans */
-  align-items: center; /* Centrer les boutons */
+  flex-direction: column; 
+  align-items: center; 
  }
 .index-btn-mid {
   width: 70%; 
@@ -267,8 +302,8 @@ video {
 }
 .btn-bot-box {
   width: 90vw;
-  margin-left: 0; /* Supprime le décalage à gauche en mode téléphone */
-  width: 90vw; /* Garde une largeur responsive */
+  margin-left: 0; 
+  width: 90vw; 
   justify-content: center;
 }
 .index-btn-small {
@@ -414,17 +449,17 @@ video {
   gap: 10px;
 }
 .experience_slot-content .image-container .overlay {
-  display: none; /* Cache l'image overlay par défaut */
-  position: absolute; /* Positionne absolument par rapport à son parent */
+  display: none; 
+  position: absolute; 
   top: 0;
   left: 0;
-  width: 100%; /* Assurez-vous que la taille de l'overlay correspond à celle de l'image principale */
+  width: 100%; 
   height: 100%;
-  object-fit: cover; /* Cela garantit que l'image couvre tout l'espace disponible */
+  object-fit: cover; 
 }
 
 .experience_slot-content:hover .overlay {
-  display: block; /* Affiche l'overlay lorsque l'élément parent est survolé */
+  display: block; 
   transition: 0.3s ease-in;
 }
 .experience_slot-content .image-container {
@@ -436,7 +471,6 @@ margin-right: 5px;
 
 
 
-/* Style pour mobile */
 @media (max-width: 899px) {
   .experience_content {
       flex-direction: column;
@@ -500,7 +534,6 @@ margin-right: 5px;
 
 }
 
-/* Style pour desktop */
 @media (min-width: 900px) {
   .experience_content {
       flex-direction: row;
@@ -515,7 +548,7 @@ margin-right: 5px;
     box-shadow: 0px -8px 8px 0px #000 inset;
   }
   .mobile_detail {
-    display: none; /* Cache le drop-down en mode desktop */
+    display: none; 
   }
 
   .experience_slot-content-mobile img {
@@ -712,7 +745,7 @@ margin-right: 5px;
   width: 100vw; 
   height: 100vh;
   overflow: hidden;
-  text-align: center; /* Center the contents */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -720,8 +753,8 @@ margin-right: 5px;
 }
 
 #loaderImage {
-  max-width: 500px; /* Adjust as needed */
-  margin-bottom: 20px; /* Space between image and progress bar */
+  max-width: 500px; 
+  margin-bottom: 20px; 
 }
 
 .progress-bar-container {
@@ -733,8 +766,8 @@ margin-right: 5px;
 .progress-bar {
   width: 0;
   max-width: 60vw;
-  height: 20px; /* Adjust height as needed */
-  background-color: #fff; /* Adjust color as needed */
+  height: 20px; 
+  background-color: #fff; 
   transition: width 0.3s ease-out;
 }
 

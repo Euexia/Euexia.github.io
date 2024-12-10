@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Porfolio Lucie Quintana</title>
-        <link rel="stylesheet" href="../style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lucie Quintana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    </head>
-    
 <body class="body-experiences contact-body">
 
     <h1 class="competence-title">Contact</h1>
-   
-    <form class="contact-box">
-        <div class="contact-box-middle">
-            <div class="contact-box-content" id="name">
-                <p>Nom *</p>
-                <input type="text" name="userName">
-             </div>
-             <div class="contact-box-content" id="name">
-                <p>Email *</p>
-                <input type="email" name="userEmail">
-             </div>
-            <div class="contact-box-content" id="object">
-                <p>Objet *</p>
-                <input type="text" name="userObject">
-            </div>
-            <div class="contact-box-content" id="message">
-                <p>Message *</p>
-                <textarea name="userMessage" id="" cols="30" rows="10" ></textarea>
-            </div>
-        </div>
-        <div class="sendBTN">
-            <a href="#" class="index-btn-mid minecraft-txt" id="submitBtn"><span>Envoyer</span></a>
-            <p id="confirmation_text">Message Envoyé</p>
-        </div>
 
-        
-    </form>
-
-
-    <div class="btn-bot-box">
-        <a href="https://www.linkedin.com/in/victor-bisch-6706b7254/" target="_blank" class="index-btn-mid minecraft-txt"><span>LinkedIn</span></a>
-        <a href="https://wa.me/0643396727" target="_blank" class="index-btn-mid minecraft-txt"><span>WhatsApp</span></a>    
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/lucie-quintana-0174b6232/" target="_blank" class="index-btn minecraft-txt">
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Euexia" target="_blank" class="index-btn minecraft-txt">
+            <span>GitHub</span>
+        </a>
+        <a href="https://discordapp.com/users/539057631692587030" target="_blank" class="index-btn minecraft-txt">
+            <span>Discord</span>
+        </a>
+        <a href="mailto:lucie.quintana04@gmail.com" class="index-btn minecraft-txt">
+            <span>Email</span>
+        </a>
     </div>
-    
-    <a href="index.html" class="retour-btn"> Retour</a>
-</body>
-<script type="module" src="firebaseconfig.js"></script>
-<script src="script.js"></script>
 
+    <div class="email-section">
+        <p class="email-text">Ou copiez mon email : 
+            <span onclick="copyEmailToClipboard()" class="clickable-email">lucie.quintana04@gmail.com</span>
+        </p>
+        <p class="copied-confirmation" id="copied-confirmation">Email copié !</p>
+    </div>
+
+    <a href="index.html" class="retour-btn"><- Retour</a>
+
+    <script>
+        function copyEmailToClipboard() {
+            const email = "lucie.quintana04@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const confirmation = document.getElementById("copied-confirmation");
+                confirmation.style.display = "block";
+                setTimeout(() => confirmation.style.display = "none", 2000);
+            });
+        }
+    </script>
+</body>
 </html>
